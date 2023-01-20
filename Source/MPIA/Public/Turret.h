@@ -12,17 +12,19 @@ class MPIA_API ATurret : public AActor
 	GENERATED_BODY()
 
 private:
+	UPROPERTY(EditAnywhere)
+	USceneComponent* Root;
 
-	UPROPERTY(EditAnywhere, BlueprintReadOnly)
+	UPROPERTY(EditAnywhere)
 	UStaticMeshComponent* mesh;
 
-	UPROPERTY(EditAnywhere, BlueprintReadOnly)
+	UPROPERTY(EditAnywhere)
 	float range;
 
-	UPROPERTY(EditAnywhere, BlueprintReadOnly)
+	UPROPERTY(EditAnywhere)
 	int lvl;
 
-	UPROPERTY(EditAnywhere, BlueprintReadOnly)
+	UPROPERTY(EditAnywhere)
 	bool targeting;
 
 
